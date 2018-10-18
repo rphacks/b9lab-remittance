@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remittance demo</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Remittance contract</h1>
+  <br>
+  <h3>Deploy your contract</h3>
+  <br><label for="recipientAddress">Recipient Address:</label><input type="text" id="recipientAddress"></input>
+  <br><label for="recipientPassword">Recipient Password:</label><input type="text" id="recipientPassword"></input>
+  <br><label for="exchangeAddress">Exchange Address:</label><input type="text" id="exchangeAddress"></input>
+  <br><label for="amount">Amount:</label><input type="text" id="amount"></input>
+  <h3 class="font-light" id="contract_address"></h3>
+  <br><button id="send" onclick="App.createRemittance()">Create Remittance</button>
+  <br>
+  <br><label for="contractAddress">Contract address:</label><input type="text" id="contractAddress"></input>
+  <br><label for="fundRecipientPassword">Recipient Password:</label><input type="text" id="fundRecipientPassword"></input>
+  <br>
+  <br><button id="send" onclick="App.retrieveFunds()">Retrieve Funds</button>
+  <br>
+  <br><label for="claimBackAddress">Contract address:</label><input type="text" id="claimBackAddress"></input>
+  <br>
+  <br><button id="send" onclick="App.claimBackFunds()">Claim back funds</button>
+  <br>
+  <br><label for="newAccount">Switch to account:</label><input type="text" id="newAccount"></input>
+  <br>
+  <br><button id="send" onclick="App.switchAccount()">Switch</button>
+</body>
+</html>
